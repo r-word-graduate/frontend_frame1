@@ -1,0 +1,11 @@
+footer{
+    border: 2px solid black;
+    display: block;
+    border-radius: 5px;
+    background-color: rgb(166, 240, 147);
+}
+
+footer h1{
+    max-width: 300px;
+    margin: auto;
+}

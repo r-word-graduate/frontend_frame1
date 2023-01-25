@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {}
+
+nav {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px 40px;
+    background-color: rgb(185, 226, 197);
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+.flex li {
+    list-style: none;
+    padding: 0px 23px;
+}
+
+header {
+    padding: 0 0px;
+    margin: auto;
+    /* to make the navbar center of page*/
+    background-color: white;
+
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+
+}
+
+.left img {
+    width: 50px;
+    height: 50px;
+}
+
+section {
+    background-color: lightgreen;
+ 
+    
+}
+
+.search {
+    width: 34vw;
+    padding: 7px 17px;
+    border: 0.5px solid grey;
+    background: #f7f8fd;
+    border-radius: 5px;
+}
