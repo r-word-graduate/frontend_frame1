@@ -1,0 +1,130 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    /* padding: 3px 200px; */
+    height: 94vh;
+    background: url('https://img.freepik.com/free-vector/copy-space-wavy-white-background-layers_23-2148845469.jpg?w=2000') no-repeat bottom center/cover;
+    opacity: 1.2;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    height: 642px;
+    background-color: rgb(107, 103, 103);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+
+#home h1 {
+    color: rgb(42, 29, 29);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 4rem;
+}
+
+#home p {
+    color: rgb(0, 7, 1);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn {
+    padding: 0.9rem 1.4rem 0.9rem 1.4rem;
+    /* border: 2px solid white; */
+    background-color: rgb(32, 10, 10);
+    color: white;
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 1.8rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px black;
+    border: none;
+}
+
+
+#services {
+    margin: 34px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding-bottom: 3rem;
+}
+
+.box {
+    margin-bottom: 20px;
+    background: whitesmoke;
+    width: 21rem;
+    padding: 1.4rem;
+    box-shadow: 0px 0px 12px #cacaca;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* Utility Classes */
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 3rem 5rem 1rem 5rem;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.center {
+    text-align: center;
+}
+
+.box:hover {
+    transform: scale(1.04);
+}
+
+.box>p {
+    font-size: 0.95rem;
+}
+
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* width: 69%;
+    height: 16rem; */
+    width: 40%;
+    height: 19rem;
+}
+
+
+@media only screen and (max-width: 400px) {
+    .texts {
+        height: 25rem;
+    }
+
+    #home h1 {
+        font-size: 3rem;
+    }
+}

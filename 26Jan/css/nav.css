@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.flex {}
+
+nav {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 40px;
+    /* background-color: rgb(185, 226, 197); */
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+.flex li {
+    list-style: none;
+    padding: 0px 23px;
+}
+
+header {
+    padding: 0 0px;
+    margin: auto;
+    /* to make the navbar center of page*/
+    background-color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 3px #e7e7e7;
+    z-index: 1000000;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+section {
+    background: #f9f9f9;
+}
+
+.search {
+    width: 19vw;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0px 0px 6px #bdbdbd;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+}
+
+#hamburger__navbar {
+    display: none;
+    height: 4.5rem;
+    animation: none;
+    /* animation: anim1 0.5s forwards; */
+}
+
+.ham__nav__ele {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ham__ele {
+    flex-direction: column;
+    display: none;
+}
+
+#hamburger__navbar__after {
+    animation: anim 0.5s forwards !important;
+}
+
+@keyframes anim {
+    0% {
+        height: 4.5rem;
+    }
+
+    100% {
+        height: 15rem;
+    }
+}
+
+@keyframes anim1 {
+    0% {
+        height: 15rem;
+    }
+
+    100% {
+        height: 4.5rem;
+    }
+}
+
+@media only screen and (max-width: 784px) {
+    .navbar {
+        display: none !important;
+    }
+
+    #hamburger__navbar {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .texts {
+        width: 80% !important;
+    }
+
+    .ham__ele li {
+        list-style: none;
+        padding: 8px 12px !important;
+    }
+}
